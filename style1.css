@@ -1,0 +1,190 @@
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:40px;
+
+background-image:url("images/bg-desktop.svg");
+background-repeat:no-repeat;
+background-size:cover;
+background-color:#77699e;
+
+font-family:"Open Sans",sans-serif;
+}
+
+.main_container{
+width:100%;
+max-width:1300px;
+
+display:flex;
+flex-direction:column;
+}
+
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+
+margin-bottom:70px;
+}
+
+.logo img{
+width:30px;
+height:30px;
+}
+
+.logo h1{
+color:white;
+font-family:"Poppins",sans-serif;
+}
+
+
+.middle_container{
+display:flex;
+gap:60px;
+align-items:center;
+}
+
+.middle_container img{
+flex:1;
+max-width:100%;
+height:auto;
+min-width:350px;
+}
+
+.description{
+flex:1;
+
+display:flex;
+flex-direction:column;
+}
+
+.description h1{
+color:white;
+font-size:40px;
+margin-bottom:20px;
+font-family:"Poppins",sans-serif;
+}
+
+.description h4{
+color:white;
+font-weight:400;
+line-height:1.6;
+}
+
+.description a{
+margin-top:25px;
+
+width:200px;
+height:50px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:white;
+color:#77699e;
+
+text-decoration:none;
+border-radius:25px;
+
+transition:0.3s;
+}
+
+.description a:hover{
+background:#beabf1;
+color:white;
+}
+
+
+
+.social_media{
+margin-top:40px;
+
+display:flex;
+justify-content:flex-end;
+gap:15px;
+}
+
+.social_media a{
+width:40px;
+height:40px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+border:1px solid white;
+border-radius:50%;
+
+transition:0.3s;
+}
+
+.social_media img{
+width:18px;
+}
+
+.social_media a:hover{
+background:white;
+}
+
+
+@media (max-width:900px){
+
+.middle_container{
+flex-direction:column;
+text-align:center;
+}
+
+.description{
+align-items:center;
+}
+
+.description h1{
+font-size:32px;
+}
+
+.social_media{
+justify-content:center;
+}
+
+}
+
+
+@media (max-width:500px){
+
+body{
+padding:20px;
+}
+
+.logo{
+margin-bottom:40px;
+}
+
+.description h1{
+font-size:26px;
+}
+
+.description h4{
+font-size:14px;
+}
+
+.description a{
+width:180px;
+height:45px;
+}
+
+.middle_container img{
+min-width:0;
+}
+
+}
